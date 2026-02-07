@@ -1,0 +1,27 @@
+name = "promptforge-api"
+main = "src/index.ts"
+compatibility_date = "2026-02-05"
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "promptforge-db"
+database_id = "placeholder" # Will be replaced after creating D1 database
+
+# KV namespace for rate limiting and caching
+[[kv_namespaces]]
+binding = "CACHE"
+id = "placeholder" # Will be replaced after creating KV namespace
+
+# R2 bucket for exports (optional)
+[[r2_buckets]]
+binding = "STORAGE"
+bucket_name = "promptforge-storage"
+
+# Environment variables (secrets set via wrangler secret put)
+[vars]
+ENVIRONMENT = "production"
+
+# Local development configuration
+[dev]
+persist_to = ".wrangler/state"
