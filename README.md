@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">⚡ PromptForge</h1>
+  <h1 align="center">⚡Intentra </h1>
   <p align="center">
     <strong>Transform vague ideas into perfect AI prompts — Free forever</strong>
   </p>
